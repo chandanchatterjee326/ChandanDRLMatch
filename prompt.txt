@@ -1,0 +1,19 @@
+Once you upgrade to LLM reasoning, you can use:
+
+Validate the top 5 rows from the DRL file against DMN rules.
+Perform semantic comparison of business conditions and return match status with explanation and confidence score.
+💡 UX Improvement (Highly Recommended)
+
+Inside your Streamlit app, add a placeholder:
+
+st.text_input(
+    "Enter your request",
+    placeholder="e.g., Validate the top 5 rows from DRL against DMN rules and return match with reason"
+)
+
+👉 This guides users automatically
+
+🎯 Final Recommended Prompt (Use this always)
+Validate the top 5 rows from the DRL file against the DMN rules and return match status wit
+
+Validate the top 2 rows from the DRL file against the DMN rules and return match status with reason and confidence.
