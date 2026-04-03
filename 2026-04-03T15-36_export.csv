@@ -1,0 +1,57 @@
+﻿,Row ID,Rule1,Rule2,Match
+0,0,"State:AL, Section:Claim Information - STD/LTD, Provision:What Are the Time Limits for Legal Proceedings?, Filing Approval Date:2025-08-18 00:00:00, Filing Tracking Number:PRUD-134608457, Claim Impact
+(Benefit/Exclusion/Limitation/Offsets:Yes, Link to Certificate
+(Comprehensive Redlines w/ Comments):83500 DAP4 0625AL Comprehensive Redline, Link to EVL 
+(Comprehensive Redlines w/ Comments):nan, Form Code:CCLM","Based on the provided information, the following business rules can be extracted regarding Short Term and Long Term Disability (STD/LTD) claims in Alabama:
+
+1. **Legal Action Time Limit Rule:**
+   - After exhausting the administrative process, a claimant must initiate legal action regarding their claim within **60 days** from the date of the final determination. Failure to do so will result in the claim being barred.
+
+2. **Claim Notification Requirement Rule:**
+   - A notice of claim must be sent to Prudential within **30 to 365 days** after the onset of disability. This notification should be provided in a format satisfactory to Prudential and made as soon thereafter as reasonably possible.
+
+3. **Proof of Claim Submission Rule:**
+   - Claimants must submit satisfactory written proof of their claim to Prudential no later than **90 to 365 days** after their Elimination Period ends. If satisfactory proof cannot be submitted within this timeframe, it must be provided within **1 to 3 years** of when satisfactory proof was initially required, unless the claimant lacks legal capacity. 
+
+These rules guide the necessary actions and timelines for claimants in submitting claims and pursuing legal remedies related to their disability claims.","Based on the provided information related to Short Term and Long Term Disability (STD/LTD) claims in Alabama, the following business rules can be detailed:
+
+1. **Legal Action Time Limit Rule:**
+   - Claimants must initiate legal proceedings related to their claim within **60 days** following the final determination by Prudential. If this period is exceeded, the claim will be barred, meaning the claimant loses the right to seek judicial remedy.
+
+2. **Claim Notification Requirement Rule:**
+   - Claimants are required to notify Prudential of their claim within a timeframe ranging from **30 to 365 days** after the onset of their disability. This notice must adhere to a format acceptable to Prudential and should be made as soon as reasonably practicable.
+
+3. **Proof of Claim Submission Rule:**
+   - Claimants need to submit satisfactory written proof of their claim to Prudential within **90 to 365 days** after the conclusion of their Elimination Period. Should they fail to do so within this initial timeframe, they are allowed to submit the proof within **1 to 3 years**, but this is contingent on the original requirement and unless the claimant is legally incapacitated.
+
+These rules specify the necessary actions and deadlines that claimants must follow in order to properly manage their claims and seek remediation for their disability situations in Alabama."
+1,1,"State:AR, Section:Benefit Highlights - STD, Provision:Minimum Weekly Benefit, Filing Approval Date:2025-07-24 00:00:00, Filing Tracking Number:PRUD-134584936, Claim Impact
+(Benefit/Exclusion/Limitation/Offsets:Yes, Link to Certificate
+(Comprehensive Redlines w/ Comments):83500 DAP4 0625AR Comprehensive Redline, Link to EVL 
+(Comprehensive Redlines w/ Comments):83500 DAP4 0625AR EVL Comprehensive Redline, Form Code:CBH-STD","Based on the provided chunks, here are the extracted business rules regarding the weekly benefits:
+
+1. **Minimum Weekly Benefit Rule:**
+   - The Minimum Weekly Benefit is defined as ranging from $0 to an unlimited amount. 
+
+2. **Maximum Weekly Benefit Rule:**
+   - The Maximum Weekly Benefit is defined as ranging from $100 to an unlimited amount.
+
+3. **Zero Benefit (Minimum Benefit) Rule:**
+   - If deducting sources of income results in a zero benefit, the Minimum Weekly Benefit Payment remains applicable (ranging from $0 to unlimited). Prudential will pay this minimum amount regardless of any deductions from deductible sources of income. Additionally, if there is an overpayment due to Prudential for any claim, the Minimum Weekly Benefit amount may be used to offset any outstanding overpayment.
+
+These rules govern how the minimum and maximum benefits are calculated and applied, accommodating situations where income deductions might impact the total benefit amount received.","Based on the provided information, here are the clear comparisons and rules regarding the weekly benefits associated with the State of Arkansas (AR) Short-Term Disability (STD) insurance:
+
+### Business Rules for Weekly Benefits
+
+1. **Minimum Weekly Benefit Rule:**
+   - The Minimum Weekly Benefit is defined to range from **$0 to an unlimited amount**. This means that even if a claimant’s calculated benefit falls below $0 due to deductions, they are entitled to a minimum benefit payment.
+
+2. **Maximum Weekly Benefit Rule:**
+   - The Maximum Weekly Benefit is defined to range from **$100 to an unlimited amount**. This establishes a clear upper limit that a claimant may receive per week, ensuring that no individual can receive a benefit exceeding this specified maximum.
+
+3. **Zero Benefit (Minimum Benefit) Rule:**
+   - In cases where deducting other sources of income results in a benefit amount of **$0**, the Minimum Weekly Benefit payment still applies. This means that Prudential will still remit the established minimum benefit amount (which can range from $0 to unlimited) to the claimant despite any deductions. This rule ensures that claimants are not left without assistance due to offsets from other income.
+   - Additionally, if there is an **overpayment** made by Prudential related to any claim, the established Minimum Weekly Benefit amount may be utilized to offset any outstanding debts stemming from overpayments. This provides a safeguard for Prudential while ensuring the claimant still receives a benefit.
+
+### Summary
+These rules are instrumental in defining how benefits are structured and how different situations such as income deductions and overpayments are handled. The minimum benefit ensures that claimants have a safety net, while the maximum cap prevents excessive payouts beyond reasonable limits. Overall, these parameters help maintain a balance between supporting individuals during incapacity while managing costs for the insurer."
