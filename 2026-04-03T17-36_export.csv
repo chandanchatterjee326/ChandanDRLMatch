@@ -1,0 +1,246 @@
+﻿,Row ID,Rule1,Rule2,Match
+0,0,"Rule ID:BR-001a, State:MD, Effective  Date:2026-01-22 00:00:00, Category:Notice of Claim, Requirement Type:Initial Notification, Trigger Event:Start of Disability / Critical Illness / Rider Benefit, Deadline / Timeline:30 – 365 Days, Condition / Exception:Or as soon thereafter as is reasonably possible.","**Business Rule Extracted:**
+
+- **Rule ID:** BR-001a  
+- **State:** MD  
+- **Effective Date:** 2026-01-22  
+- **Category:** Notice of Claim  
+- **Requirement Type:** Initial Notification  
+- **Trigger Event:** Start of Disability / Critical Illness / Rider Benefit  
+- **Notification Deadline:** Claims must be notified within **30 to 365 days** after the triggering event (start of disability, critical illness, or rider benefit) or as soon thereafter as is reasonably possible.  
+- **Proof of Claim Requirement:** Written proof of the claim must be submitted no later than **90 to 365 days** after the end of the elimination period(s). If satisfactory proof cannot be submitted within this time frame, it must be provided no later than **1 to 3 years** after the required proof time, except in cases of legal incapacity.  
+- **Consequences of Late Notification:** Failure to provide notice within the specified timeline does not invalidate the claim; however, adherence to the established timelines is imperative to avoid issues with claim validity.","Here's a comparison of the provided information in a structured format:
+
+### Overview
+The business rule extracted outlines critical requirements for notice of claims related to disability, critical illness, or rider benefits under Maryland state law.
+
+### Details of the Business Rule
+- **Rule ID:** BR-001a
+- **State:** Maryland (MD)
+- **Effective Date:** January 22, 2026
+- **Category:** Notice of Claim
+- **Requirement Type:** Initial Notification
+- **Trigger Event:** Occurrence of  
+  - Disability  
+  - Critical Illness  
+  - Rider Benefit
+- **Notification Deadline:**  
+  - Claims must be notified within **30 to 365 days** after the triggering event.  
+  - Alternatively, notification may occur as soon thereafter as is reasonably possible.
+
+### Proof of Claim Requirement
+- Written proof of the claim must be submitted within **90 to 365 days** following the end of any elimination period(s). 
+- If proof cannot be submitted within the specified timeframe, it must be provided no later than **1 to 3 years** after the deadline, unless the claimant is legally incapacitated.
+
+### Consequences of Late Notification
+- Failure to notify within the specified timelines does not invalidate the claim. However, compliance with the established timelines is crucial to prevent potential issues regarding the validity of the claim.
+
+### Key Takeaways
+- The initial notification requirement emphasizes the importance of timely communication following the triggering event.
+- Proof of claim submission has a more extended window but is also restricted by specific timelines to maintain claim validity.
+- There is a provision for legal incapacity, which may affect the claim timelines.
+
+This comparison encapsulates the business rule in a format that highlights essential components for quick reference and understanding."
+1,1,"Rule ID:BR-001b, State:MD, Effective  Date:2026-01-22 00:00:00, Category:Proof of Loss, Requirement Type:Initial Written Proof, Trigger Event:End of Elimination Period / Start of Liability, Deadline / Timeline:90 – 365 Days, Condition / Exception:Mandatory for claim validation.","Based on the provided information, the business rule extracted from Rule ID: BR-001b can be articulated as follows:
+
+**Business Rule - BR-001b: Proof of Claim Requirements**
+
+1. **Proof Submission Timeline**:
+   - Policyholders must submit satisfactory written proof of their claim to Prudential within the specified timeframe:
+     - No later than 90 to 365 days after the end of the Elimination Period.
+     - If unable to provide proof within that timeframe, it must be submitted no later than 1 to 3 years from the required proof date, unless the policyholder lacks legal capacity.
+
+2. **Implications of Non-Compliance**:
+   - Failure to submit the required information, proof, or authorization that is satisfactory to Prudential will result in:
+     - Denial of the claim.
+     - Cessation of benefit payments.
+   - A claim will not be invalidated if notice is provided within the specified period.
+
+3. **Components of Satisfactory Proof**:
+   - The policyholder must provide satisfactory proof of their business overhead covered expenses incurred prior to the date of disability.
+   - Acceptable forms of proof include, but are not limited to:
+     - Tax documents.
+     - Copies of bills addressed to the policyholder or their business.
+     - Business ownership documents.
+     - Proof of joint occupancy.
+     - Documentation indicating individuals authorized to pay expenses. 
+
+This business rule clearly delineates the obligations of policyholders in terms of proof submission, the consequences of failure to comply, and the types of documentation required to support a claim.","The provided information outlines **Business Rule - BR-001b: Proof of Claim Requirements**, establishing clear guidelines for policyholders regarding the submission of proof for claims related to business overhead expenses. Below is a structured comparison and summary of the key elements:
+
+### Key Components of Business Rule - BR-001b
+
+1. **Proof Submission Timeline**:
+   - Policyholders are mandated to submit written proof of their claim within a set window post-event.
+   - **Timeline**: Claims must be submitted **no later than 90 to 365 days** after the end of the Elimination Period. 
+   - In situations where submission within the standard timeframe isn't possible, proof may still be submitted **within 1 to 3 years** from the required proof date, except where the policyholder is legally incapacitated.
+
+2. **Implications of Non-Compliance**:
+   - Should a policyholder fail to comply with the proof submission requirements:
+     - The claim may be **denied**.
+     - Benefit payments may be **halted**.
+   - Nevertheless, a claim remains valid if notice is provided within the designated timeframe.
+
+3. **Components of Satisfactory Proof**:
+   - Policyholders need to provide clear proof of business overhead expenses incurred before the disability event.
+   - Acceptable documentation includes:
+     - **Tax Records**: Evidence of income and expenses.
+     - **Bills**: Invoices or bills addressed to the policyholder or their business.
+     - **Business Ownership Papers**: Documentation proving business ownership.
+     - **Joint Occupancy Proof**: If applicable, to indicate shared responsibilities.
+     - **Authorized Payment Documentation**: Proof indicating who is permitted to manage financial obligations.
+
+### Summary
+
+The Business Rule - BR-001b set forth by Prudential establishes essential criteria for ensuring that policyholders understand the proof-of-claim requirements following an event triggering claims related to business overhead expenses. The rule emphasizes the necessity for timely and satisfactory evidence, the repercussions of non-compliance, and outlines acceptable forms of documentation to support the claim process. This clarity aims to streamline claims handling, reduce disputes, and ensure that policyholders are adequately informed of their responsibilities and options."
+2,2,"Rule ID:BR-001c, State:MD, Effective  Date:2026-01-22 00:00:00, Category:Proof of Loss, Requirement Type:Late Submission Extension, Trigger Event:After the 90–365 day deadline expires, Deadline / Timeline:Up to 1 Year, Condition / Exception:Valid only if earlier proof was not possible (except for lack of legal capacity).","**Business Rule (BR-001c)**:
+
+1. **Proof Submission Timeline**: 
+   - If satisfactory proof cannot be provided within 90 to 365 days, it must be submitted no later than 1 to 3 years after the initially required submission date, unless there is an absence of legal capacity.
+
+2. **Claim Denial or Payment Suspension**: 
+   - Prudential will deny claims or stop benefit payments if the necessary information, proof, or authorization is not provided in a satisfactory manner within the specified timeline.
+
+3. **Ongoing Proof Requirement**: 
+   - Prudential may request proof of continuing disability or benefits, or verification of being under regular medical care, to be submitted within 30 to 365 days of such a request.
+
+This rule outlines the conditions under which proof of loss must be submitted, the consequences of failure to do so, and ongoing requirements for providing proof related to disability or benefits.","**Comparison of Rule ID: BR-001c**
+
+1. **Overview of Rule ID: BR-001c**: 
+   - The rule establishes the guidelines for submitting proof of loss in the state of Maryland, effective from January 22, 2026. It specifically addresses the conditions under which a late submission may be allowed and outlines the consequences for failure to meet submission timelines.
+
+2. **Proof Submission Timeline**: 
+   - The business rule indicates that if proof cannot be submitted within 90 to 365 days post-trigger event, claimants are allowed an extension to submit proof up to 1 to 3 years. This extension is contingent upon the unavailability of proof not being due to a lack of legal capacity.
+
+3. **Trigger Event**:
+   - The trigger for the late submission extension is the expiration of the 90 to 365 day deadline, marking a clear cutoff point for timely submission.
+
+4. **Claim Denial or Payment Suspension**: 
+   - The rule emphasizes that Prudential will actively deny claims or suspend benefits if the claimant does not provide satisfactory proof or required authorization within the specified timeline. This highlights the importance of compliance with the stipulated rules.
+
+5. **Ongoing Proof Requirement**: 
+   - Prudential retains the right to request further proof of disability or benefits, enforcing a timeline of 30 to 365 days from the date of the request. This ensures ongoing verification and compliance with benefit requirements.
+
+6. **Condition / Exception**:
+   - The exception is crucial—it outlines that the late submission extension is not applicable in cases where the claimant lacked legal capacity. This underscores a regulatory adherence to allow for genuine circumstances of inability to submit proof.
+
+**Summary**:  
+Business Rule BR-001c delineates strict parameters for submission timelines regarding proof of loss while recognizing specific circumstances (like lack of legal capacity) that may permit extensions. It also emphasizes prudential obligations to deny claims if required documentation is not submitted in a satisfactory manner. The ongoing proof requirements further fortify the necessity of compliance to ensure continued benefits. Overall, this rule sets a balance between allowing some leniency in proof submission while maintaining strict adherence to timelines to prevent abuse of the system."
+3,3,"Rule ID:BR-001d, State:MD, Effective  Date:2026-01-22 00:00:00, Category:Proof of Loss, Requirement Type:Ongoing Proof, Trigger Event:During the benefit period, Deadline / Timeline:As requested, Condition / Exception:Must be furnished as often as Prudential reasonably requires.","Based on the provided information, the following business rule can be extracted for ""Proof of Loss"" related to ongoing proof requirements and timelines:
+
+**Business Rule ID: BR-001d**
+
+1. **Ongoing Proof Requirement**: The claimant must provide satisfactory proof of their continuing Disability/condition as required by Prudential.
+
+2. **Timeline for Submission**: Proof must be submitted within 30 days of a request made by Prudential.
+
+3. **Consequences of Non-Compliance**: Failure to provide the required proof, authorization, or information within the specified timeline will result in the denial of the claim or cessation of benefit payments.
+
+4. **Types of Information Required**: The claimant may need to authorize Prudential to obtain additional medical information and provide non-medical documents such as IRS federal income tax returns, W-2s, and 1099s as part of the satisfactory proof of claim.
+
+5. **Additional Conditions**: If applicable, proof must also verify the ongoing management of the condition under the Regular Care of a Doctor, adhering to specific conditions set forth by Prudential.
+
+This rule emphasizes the importance of timely and complete documentation in the claim process to avoid negative consequences.","Based on the provided information regarding Rule ID: BR-001d for the state of Maryland related to Proof of Loss and ongoing proof requirements, here is a refined representation of the business rule, highlighting each component clearly:
+
+---
+
+**Business Rule ID: BR-001d**
+
+**1. Requirement Type**: Ongoing Proof  
+- **Description**: The claimant is required to provide satisfactory proof of their continuing disability or medical condition.
+
+**2. Trigger Event**: Benefit Period  
+- **Context**: This requirement is applicable during the benefit period established by Prudential.
+
+**3. Timeline for Submission**: As Requested  
+- **Details**: Proof must be submitted within a timeframe as specified by Prudential upon request.
+
+**4. Conditions/Exceptions**: Prudential's Discretion  
+- **Specification**: The frequency and types of proof required must be furnished as often as Prudential reasonably requires.
+
+**5. Consequences of Non-Compliance**:  
+- **Implications**: If the required proof, authorization, or information is not submitted within 30 days of the request, it may lead to the denial of the claim or cessation of benefit payments.
+
+**6. Types of Information Required**:
+- Claimants may need to:
+  - Authorize Prudential to obtain relevant medical information.
+  - Provide additional documentation such as IRS federal income tax returns, W-2 forms, and 1099 forms.
+
+**7. Additional Conditions**: Regular Medical Care  
+- Proof must confirm that the condition is being actively managed under the regular care of a doctor, following any specific conditions set forth by Prudential.
+
+---
+
+This structured summary clarifies the components of business rule BR-001d, ensuring that stakeholders understand the requirements, timelines, and consequences associated with ongoing proof of loss for claims."
+4,4,"Rule ID:BR-001e, State:MD, Effective  Date:2026-01-22 00:00:00, Category:Delivery, Requirement Type:Submission Format, Trigger Event:Any claim action, Deadline / Timeline:nan, Condition / Exception:Written, telephonic, or electronic in a format satisfactory to Prudential.","The business rule extracted from the provided information (Rule ID: BR-001e) is as follows:
+
+**Business Rule: Submission Format Requirement for Claims (MD)**
+
+- **Rule ID**: BR-001e 
+- **Effective Date**: January 22, 2026 
+- **Category**: Delivery 
+- **Requirement Type**: Submission Format 
+- **Trigger Event**: Any claim action
+
+**Conditions and Requirements**:
+
+1. **Notice of Claim Submission**:
+   - A notice of a claim must be submitted in a format deemed satisfactory by Prudential.
+   - This notice must be sent within **30 to 365 days** after the commencement of the claimant's disability, or as soon as reasonably possible thereafter.
+
+2. **Proof of Claim Submission**:
+   - Claimants may need to provide Prudential with authorization to acquire additional medical information, along with required non-medical documentation (such as copies of IRS federal income tax returns, W-2 forms, and 1099 forms).
+   - This information must serve as satisfactory proof of claim or satisfactory proof of ongoing disability.
+
+3. **Denial of Claim Due to Non-compliance**:
+   - Prudential reserves the right to deny claims or cease benefit payments if the required information, proof, or authorizations, which must be satisfactory to Prudential, are not submitted.
+
+This rule establishes the framework for the proper submission of claims to Prudential, outlining the necessary steps and documentation to ensure compliance.","The presented business rule, **Submission Format Requirement for Claims (MD)**, outlines the procedural expectations that claimants must adhere to when submitting claims to Prudential in the state of Maryland. Here's a comparison of the key elements found in the original rule details and the extracted business rule:
+
+### Comparison of Elements
+
+1. **Rule ID**:
+   - **Original**: BR-001e
+   - **Extracted**: BR-001e
+   - **Comparison**: Consistent in both documents.
+
+2. **State**:
+   - **Original**: MD
+   - **Extracted**: MD
+   - **Comparison**: Consistent in both documents.
+
+3. **Effective Date**:
+   - **Original**: January 22, 2026
+   - **Extracted**: January 22, 2026
+   - **Comparison**: Consistent in both documents.
+
+4. **Category**:
+   - **Original**: Delivery
+   - **Extracted**: Delivery
+   - **Comparison**: Consistent in both documents.
+
+5. **Requirement Type**:
+   - **Original**: Submission Format
+   - **Extracted**: Submission Format
+   - **Comparison**: Consistent in both documents.
+
+6. **Trigger Event**:
+   - **Original**: Any claim action
+   - **Extracted**: Any claim action
+   - **Comparison**: Consistent in both documents.
+
+7. **Deadline / Timeline**:
+   - **Original**: nan (not applicable)
+   - **Extracted**: Within **30 to 365 days**
+   - **Comparison**: The extracted rule adds specificity regarding the timeframe for submission, which was absent in the original document.
+
+8. **Condition / Exception**:
+   - **Original**: Written, telephonic, or electronic in a format satisfactory to Prudential.
+   - **Extracted**: 
+   - A notice must be submitted in a format deemed satisfactory by Prudential.
+   - Claimants should provide authorization to acquire additional medical information, alongside necessary documentation (e.g., IRS returns, W-2, 1099).
+   - Claims may be denied if the required documentation is not submitted.
+   - **Comparison**: The extracted rule expands on the original condition by detailing submission methods, additional documentation required, and consequences for non-compliance.
+
+### Summary
+
+Overall, the extracted business rule provides a more detailed framework for claim submission compared to the original information. While all fundamental aspects are retained, the extracted rule elaborates on the deadline for submission and highlights specific documentation requirements and the repercussions of non-compliance, enhancing clarity for claimants within the stated parameters. This comprehensive approach ensures that all necessary steps are clearly communicated to avoid misunderstandings and ensure proper claim processing."
