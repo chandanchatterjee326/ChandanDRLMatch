@@ -1,0 +1,54 @@
+﻿,Row ID,Business Content 1,Rule 1,Business Content 2,Rule 2,Flag,Reason
+0,0,"For Case 1, an individual is eligible for coverage if they are classified as an Employee and work at least 30 hours per week.","Employment Type=Employee
+Working Hours>=30
+Condition 3 Fieldnannan
+Action=Eligible for Coverage",The eligibility for coverage is based on employment classification and minimum hours worked per week as specified in the documents provided.,"Employment Classification=Employee
+Hours Worked per Week>=30
+Action=Eligible for coverage",MISMATCH,"The two rules do not match due to differences in field names, missing conditions, and the action specified."
+1,1,"For Case 2, if an individual is unable to perform their duties at work, is under doctor care, and is currently not working, then they should be considered disabled.","Work Ability=Unable to perform duties
+Doctor Care=Yes
+Currently Working=No
+Action=Considered Disabled","For Case 2, if an individual is unable to perform their duties at work, is under doctor care, and is currently not working, then they should be considered disabled.","Unable to perform duties=true
+Under doctor care=true
+Currently not working=true
+Action=Considered disabled",MISMATCH,"The two rules do not match due to differences in field names, values, and the phrasing of conditions."
+2,2,"For Case 3, if the elimination period has been completed (indicated by a value of 'Yes'), then the action to take is to start the benefit payment.","Elimination Period Completed=Yes
+None=None
+None=None
+Action=Start Benefit Payment","For Case 3, if the elimination period has been completed (indicated by a value of 'Yes'), then the action to take is to start the benefit payment. Disability benefit payments begin the day after the Elimination Period is completed. The Elimination Period is defined as 0 to 365 days for Disability due to Injury and 0 to 365 days for Disability due to Sickness. If the Elimination Period has been met, benefit payments will commence as long as the claim is approved.","Elimination Period Completed=Yes
+Action=Start the benefit payment",MISMATCH,"The two rules do not match due to differences in the number of conditions, the action wording, and the presence of empty fields."
+3,3,"For Case 4, an individual is eligible for coverage if they are classified as an Employee and work less than 30 hours per week.","Employment Type=Employee
+Working Hours<30
+None=None
+Action=Eligible for Coverage","For Case 4, an individual is eligible for coverage if they are classified as an Employee and work less than 30 hours per week. However, the documents indicate that employees must be working at least 30 hours per week to be eligible for coverage. This creates a contradiction in the eligibility criteria.","Classification=Employee
+Hours Worked Per Week<30
+Minimum Hours Requirement>=30
+Action=Eligible for coverage",MISMATCH,"The two rules do not match due to differences in conditions, values, operators, and the action specified."
+4,4,"For Case 5, the individual is unable to perform their work duties and is currently not working. Therefore, they should be considered disabled.","Work Ability=Unable to perform duties
+Currently Working=No
+None=None
+Action=Considered Disabled","For Case 5, the individual is unable to perform their work duties and is currently not working. Therefore, they should be considered disabled.","Work Dutiesunable to performtrue
+Current Employment Statusnot workingtrue
+Disability Definitionmeets conditionstrue
+Action=Consider the individual as disabled.",MISMATCH,"The two rules do not match due to differences in conditions, values, operators, and the action specified."
+5,5,"For Case 6, if the elimination period has not been completed, then start the benefit payment.","Elimination Period Completed=No
+None=None
+None=None
+Action=Start Benefit Payment","The elimination period for disability benefits is defined as a duration of 0 to 365 days for both Disability due to Injury and Disability due to Sickness. Disability benefit payments commence the day after the Elimination Period is completed. If the elimination period has not been completed, then the benefit payment should start. This is applicable to Case 6.","Elimination Period Completedisfalse
+Action=Start benefit payment",MISMATCH,"The two rules do not match due to differences in the number of conditions, the operators used, and the presence of empty fields."
+6,6,"For Case 7, if the individual's age is greater than 100, then the coverage will continue.","Age>100
+None=None
+None=None
+Action=Coverage Continues","For Case 7, if the individual's age is greater than 100, then the coverage will continue.","Age>100
+Action=Coverage will continue",MISMATCH,The two rules do not match due to differences in conditions and action.
+7,7,"For Case 8, if the individual is currently working and has confirmed this by indicating 'Yes', then they should be considered disabled.","Currently Working=Yes
+None=None
+None=None
+Action=Considered Disabled","For Case 8, if the individual is currently working and has confirmed this by indicating 'Yes', then they should be considered disabled. The definition of 'Disabled' or 'Disability' includes meeting the conditions outlined under the How Does Prudential Define Disability section. Prior to the disability, the individual must have been Actively at Work for their employer. They must be performing all of the Material and Substantial Duties of their Regular Occupation. They must be earning less than 20% of their Indexed Monthly Earnings. They must be working in their Regular Occupation at least the number of hours in their normal work week set by their employer but not less than 30 hours per week. The individual must be under the Regular Care of a Doctor. The loss of a professional or occupational license or certification does not, in itself, constitute Disability.","Currently Working=Yes
+Actively at Work=True
+Material and Substantial Duties=Performed
+Earnings<20% of Indexed Monthly Earnings
+Hours Worked>=30
+Regular Care of a Doctor=True
+Prior Employment Status=Actively at Work
+Action=Considered Disabled",MISMATCH,"The two rules do not match due to significant differences in the conditions specified, including missing conditions, different values, different operators, and a mismatch in the action taken."
