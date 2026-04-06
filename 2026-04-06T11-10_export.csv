@@ -1,0 +1,47 @@
+﻿,Row ID,Business Content 1,Rule 1,Business Content 2,Rule 2,Flag,Reason
+0,0,"For Case 1, an individual is eligible for coverage if they are classified as an Employee and work 30 or more hours per week.","Employment Type=Employee
+Working Hours>=30
+None=None
+Action=Eligible for Coverage",An individual is eligible for coverage if they are classified as an Employee and work 30 or more hours per week.,"Classification=Employee
+Hours Worked Per Week=30
+Action=Eligible for coverage",MISMATCH,"The two rules do not match due to differences in field names, values, operators, and the action specified."
+1,1,"For Case 2, the individual is considered disabled if they are unable to perform their duties at work, are under the care of a doctor, and are currently not working.","Work Ability=Unable to perform duties
+Doctor Care=Yes
+Currently Working=No
+Action=Considered Disabled",Validation of disability status for Case 2 based on specific criteria.,"ability_to_perform_duties=unable
+care_of_doctor=under care
+employment_status=not working
+Action=considered disabled",MISMATCH,"The two rules do not match due to differences in field names, values, and operators, as well as the specific wording of the conditions."
+2,2,"For Case 3, if the Elimination Period has been completed (indicated by a value of 'Yes'), then the action to take is to start the benefit payment.","Elimination Period Completed=Yes
+None=None
+None=None
+Action=Start Benefit Payment",Validation rule for starting benefit payments after the Elimination Period is completed.,"Elimination Period Completed=Yes
+Action=Start the benefit payment",MISMATCH,The two rules do not match due to a mismatch in the action specified.
+3,3,"For Case 4, an individual is eligible for coverage if they are classified as an Employee and work fewer than 30 hours per week.","Employment Type=Employee
+Working Hours<30
+None=None
+Action=Eligible for Coverage",Eligibility criteria for coverage under the Group Contract.,"Employee Classification=Employee
+Hours Worked per Week<30
+Action=Eligible for coverage",MISMATCH,"The two rules do not match due to differences in field names, values, and the specific conditions used."
+4,4,"For Case 5, if an individual is unable to perform their work duties and is currently not working, then they should be considered disabled.","Work Ability=Unable to perform duties
+Currently Working=No
+None=None
+Action=Considered Disabled",Validation rule for determining disability status based on work duties and current employment status.,"work_duties_performanceunable_to_performtrue
+current_employment_statusnot_workingtrue
+Action=considered_disabled",MISMATCH,"The two rules do not match due to differences in field names, operators, values, and the structure of the conditions."
+5,5,"For Case 6, if the elimination period has not been completed, then start the benefit payment.","Elimination Period Completed=No
+None=None
+None=None
+Action=Start Benefit Payment",Validation rule for benefit payment initiation based on the elimination period completion.,"elimination_period_completed=false
+Action=start_benefit_payment",MATCH,All conditions match semantically
+6,6,"For Case 7, if the individual's age is greater than 100, then the coverage will continue.","Age>100
+Condition 2 Fieldcondition 2 operatorCondition 2 Value
+Condition 3 Fieldcondition 3 operatorCondition 3 Value
+Action=Coverage Continues","For Case 7, if the individual's age is greater than 100, then the coverage will continue.","age>100
+Action=coverage will continue",MISMATCH,"The two rules do not match due to differences in the number of conditions, the action specified, and the values associated with the conditions."
+7,7,"For Case 8, if the individual is currently working and has confirmed this by indicating 'Yes', then they should be considered disabled.","Currently Working=Yes
+None=None
+None=None
+Action=Considered Disabled",Validation rule for determining disability status based on employment status.,"individual employment status=currently working
+confirmation of employment status=Yes
+Action=considered disabled",MISMATCH,"The two rules do not match due to differences in conditions, values, and the action specified."
