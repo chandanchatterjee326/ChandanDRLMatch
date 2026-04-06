@@ -1,0 +1,76 @@
+﻿,Row ID,Business Content 1,Rule 1,Business Content 2,Rule 2,Flag,Reason
+0,0,"In the state of Maryland, effective January 22, 2026, for the category of Notice of Claim, an initial notification is required when a disability, critical illness, or rider benefit begins. The notification must be made within 30 to 365 days of the trigger event, or as soon thereafter as is reasonably possible.","State=MD
+Effective Date>=2026-01-22
+Category=Notice of Claim
+Requirement Type=Initial Notification
+Trigger Event=Start of Disability / Critical Illness / Rider Benefit
+Deadline / Timelinewithin30 – 365 Days
+Condition / Exception=Or as soon thereafter as is reasonably possible.
+Action=Notify the relevant parties of the claim.","In the state of Maryland, effective January 22, 2026, for the category of Notice of Claim, an initial notification is required when a disability, critical illness, or rider benefit begins. The notification must be made within 30 to 365 days of the trigger event, or as soon thereafter as is reasonably possible.","State=Maryland
+Effective Date=January 22, 2026
+Category=Notice of Claim
+Event Typein['disability', 'critical illness', 'rider benefit']
+Notification Periodbetween['30 days', '365 days']
+Notification Timing=as soon thereafter as is reasonably possible
+Action=Initial notification is required",PARTIAL,The rules share some common conditions but also have notable differences in terminology and structure. The actions differ significantly in intent.
+1,1,"In the state of Maryland, effective January 22, 2026, for claims related to Proof of Loss, the initial written proof is required. This requirement is triggered at the end of the elimination period or the start of liability. Claimants must submit this proof within 90 to 365 days after the trigger event. This submission is mandatory for the validation of the claim.","State=MD
+Effective Dateon or after2026-01-22
+Category=Proof of Loss
+Requirement Type=Initial Written Proof
+Trigger Event=End of Elimination Period / Start of Liability
+Deadline / Timelinewithin90 – 365 Days
+Condition / Exception=Mandatory for claim validation.
+Action=Require submission of initial written proof of loss for claim validation.","In the state of Maryland, effective January 22, 2026, for claims related to Proof of Loss, the initial written proof is required. This requirement is triggered at the end of the elimination period or the start of liability. Claimants must submit this proof within 90 to 365 days after the trigger event. This submission is mandatory for the validation of the claim.","State=Maryland
+Effective Date>=2026-01-22
+Claim Type=Proof of Loss
+Trigger Eventin['end of elimination period', 'start of liability']
+Submission Timeframebetween['90 days', '365 days']
+Submission Requirement=mandatory
+Action=Validate claim",PARTIAL,"The rules share some common conditions but differ in others, leading to a partial match. The actions also differ significantly in intent."
+2,2,"In the state of Maryland, effective January 22, 2026, there is a requirement related to the Proof of Loss category. If a claim is submitted late, there is an extension available for submission that applies after the 90 to 365 day deadline has expired. This extension allows for submission up to one year after the deadline, but it is only valid if it can be demonstrated that earlier proof of loss was not possible, except in cases where there was a lack of legal capacity.","State=MD
+Effective Date=2026-01-22
+Category=Proof of Loss
+Requirement Type=Late Submission Extension
+Trigger Event=After the 90–365 day deadline expires
+Deadline / Timeline=Up to 1 Year
+Condition / Exception=Valid only if earlier proof was not possible (except for lack of legal capacity)
+Action=Allow late submission extension for proof of loss claims under specified conditions.","In the state of Maryland, effective January 22, 2026, there is a requirement related to the Proof of Loss category. If a claim is submitted late, there is an extension available for submission that applies after the 90 to 365 day deadline has expired. This extension allows for submission up to one year after the deadline, but it is only valid if it can be demonstrated that earlier proof of loss was not possible, except in cases where there was a lack of legal capacity.","Claim Submission Timingafter90 days
+Claim Submission Timing=365 days
+Claim Submission Timingup to1 year after the deadline
+Proof of Loss Availabilitydemonstratedearlier proof of loss was not possible
+Legal Capacitynot applicablelack of legal capacity
+Action=Allow submission of proof of loss under specified conditions",PARTIAL,"While both rules address the submission of proof of loss claims under specific conditions, they differ in the way they articulate timing and conditions. Rule1 uses specific dates and conditions, while Rule2 uses broader timing phrases and focuses on the demonstration of proof availability."
+3,3,"In the state of Maryland, starting from January 22, 2026, individuals are required to provide ongoing proof of loss during the benefit period. This proof must be submitted as requested by Prudential and must be furnished as often as Prudential reasonably requires.","State=MD
+Effective Dateon or after2026-01-22
+Category=Proof of Loss
+Requirement Type=Ongoing Proof
+Trigger Event=During the benefit period
+Deadline / Timeline=As requested
+Condition / Exception=Must be furnished as often as Prudential reasonably requires.
+Action=Provide ongoing proof of loss","In the state of Maryland, starting from January 22, 2026, individuals are required to provide ongoing proof of loss during the benefit period. This proof must be submitted as requested by Prudential and must be furnished as often as Prudential reasonably requires. The satisfactory proof must be received within 30 days of a request by Prudential. Prudential will deny claims or stop sending benefit payments if the appropriate information, proof, or authorization, satisfactory to Prudential, is not submitted. For claims related to Covered Critical Illness, Prudential may request proof of continuing Covered Critical Illness or that the individual is under the Regular Care of a Doctor. This proof must be provided at the individual's expense. Satisfactory proof of claim must show that the individual is under the Regular Care of a Doctor, appropriate documentation of Weekly or Monthly Earnings, and appropriate documentation that the individual is not working at any job during the Elimination Period. Satisfactory proof must be submitted no later than 90 to 365 days after the Elimination Period ends, and if not possible, it must be given no later than 1 to 3 years after the time satisfactory proof is otherwise required, except in the absence of legal capacity. If notice is not given in the specified time, the claim will not be invalidated. The proof may include medical information, financial information, and any other items Prudential may reasonably require to document Disability or to determine eligibility for benefits. The date the individual fails to submit satisfactory proof of a continued Covered Critical Illness satisfactory to Prudential will also be a condition for stopping benefits.","State=Maryland
+Start Date>=2026-01-22
+Proof Submission=Ongoing
+Request by Prudential=Required
+Submission Timeframe<=30 days
+Claim Denial=Applicable if proof not submitted
+Proof of Continuing Illness=Required
+Regular Care of Doctor=Required
+Documentation of Earnings=Required
+Not Working During Elimination Period=Required
+Proof Submission Deadlinebetween90 to 365 days
+Extended Proof Submission Deadlinebetween1 to 3 years
+Claim Notification Deadline=Required
+Medical Information=Required
+Financial Information=Required
+Failure to Submit Proof=Condition for Stopping Benefits
+Action=Provide ongoing proof of loss during the benefit period as requested by Prudential.",PARTIAL,"The rules share a common intent of requiring ongoing proof of loss, but they differ significantly in the conditions specified. While some fields match or are similar, others are either missing or conflict in their requirements."
+4,4,"In the state of Maryland, effective January 22, 2026, any claim action must be submitted in a written, telephonic, or electronic format that is satisfactory to Prudential.","State=MD
+Effective Dateon or after2026-01-22
+Trigger Event=Any claim action
+Action=Submission must be in a written, telephonic, or electronic format satisfactory to Prudential.","In the state of Maryland, effective January 22, 2026, any claim action must be submitted in a written, telephonic, or electronic format that is satisfactory to Prudential. Notice of a claim should be sent in a format satisfactory to Prudential within 30 – 365 days after the date Your Disability begins or as soon thereafter as is reasonably possible. You must provide satisfactory proof of a continued Covered Critical Illness satisfactory to Prudential within 30 days of a request by Prudential. If the appropriate information, proof, or authorization satisfactory to Prudential is not submitted, Prudential will deny your claim or stop sending you benefit payments.","Claim Submission Formatin['written', 'telephonic', 'electronic']
+State=Maryland
+Effective Date>=2026-01-22
+Claim Notification Periodbetween['30 days', '365 days']
+Satisfactory Proof Submission<=30 days
+Claim Denial Conditionif notappropriate information, proof, or authorization is submitted
+Action=Submit claim in a satisfactory format to Prudential",PARTIAL,"The rules share some common conditions related to state and effective date, but Rule2 includes additional conditions that are not present in Rule1, leading to a partial match. The actions also differ slightly in wording but convey a similar intent regarding submission formats."
