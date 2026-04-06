@@ -1,0 +1,45 @@
+﻿,Row ID,Business Content 1,Rule 1,Business Content 2,Rule 2,Flag,Reason
+0,0,"For Case 1, an individual is eligible for coverage if they are classified as an Employee and work 30 or more hours per week.","Employment Type=Employee
+Working Hours>=30
+Condition 3 Fieldnannan
+Action=Eligible for Coverage",Eligibility for coverage based on employment status and hours worked.,"Employment Status=Employee
+Hours Worked Per Week>=30
+Action=Eligible for coverage",MISMATCH,Field 'employment type' mismatch: expected 'employee' | Field 'working hours' mismatch: expected '30' | Field 'condition 3 field' mismatch: expected 'nan'
+1,1,"For Case 2, the individual is considered disabled if they are unable to perform their duties, are under doctor care, and are currently not working.","Work Ability=Unable to perform duties
+Doctor Care=Yes
+Currently Working=No
+Action=Considered Disabled",Validation for determining if an individual is considered disabled under Case 2.,"ability_to_perform_duties=unable
+doctor_care=under regular care
+employment_status=not working
+Action=considered disabled",MATCH,All conditions match semantically
+2,2,"For Case 3, if the elimination period has been completed (indicated by a value of 'Yes'), then the action to take is to start the benefit payment.","Elimination Period Completed=Yes
+None=None
+None=None
+Action=Start Benefit Payment",Validation rule for benefit payment initiation based on the completion of the elimination period.,"Elimination Period Completed=Yes
+Action=Start benefit payment",MATCH,All conditions match semantically
+3,3,"For Case 4, an individual is eligible for coverage if they are classified as an Employee and work less than 30 hours per week.","Employment Type=Employee
+Working Hours<30
+None=None
+Action=Eligible for Coverage",Eligibility for coverage based on employment status and hours worked.,"Employment Status=Employee
+Hours Worked per Week<30
+Action=Eligible for coverage",MISMATCH,Field 'employment type' mismatch: expected 'employee' | Field 'working hours' mismatch: expected '30'
+4,4,"For Case 5, the individual is unable to perform their work duties and is currently not working. Therefore, they should be considered disabled.","Work Ability=Unable to perform duties
+Currently Working=No
+None=None
+Action=Considered Disabled",Validation rule for determining disability status based on work duties and current employment status.,"work_duties_performance=unable
+current_employment_status=not working
+Action=considered disabled",MISMATCH,Field 'work ability' mismatch: expected 'unable to perform duties' | Field 'currently working' mismatch: expected 'false'
+5,5,"For Case 6, if the elimination period has not been completed, then start the benefit payment.","Elimination Period Completed=No
+Action=Start Benefit Payment",Validation rule for benefit payment initiation based on the elimination period.,"elimination_period_completed=false
+Action=start_benefit_payment",MATCH,All conditions match semantically
+6,6,"For Case 7, if the individual's age is greater than 100 years, then the coverage will continue.","Age>100
+Condition 2 Fieldcondition 2 operatorCondition 2 Value
+Condition 3 Fieldcondition 3 operatorCondition 3 Value
+Action=Coverage Continues","For Case 7, the coverage will continue if the individual's age is greater than 100 years.","individual_age>100
+Action=continue coverage",MISMATCH,Field 'condition 2 field' mismatch: expected 'condition 2 value' | Field 'condition 3 field' mismatch: expected 'condition 3 value' | Field 'action' mismatch: expected 'coverage continues'
+7,7,"For Case 8, if the individual is currently working and has confirmed this by indicating 'Yes', then they should be considered disabled.","Currently Working=Yes
+None=None
+None=None
+Action=Considered Disabled","For Case 8, the validation rule states that if an individual is currently working and has confirmed this by indicating 'Yes', then they should be considered disabled.","current_work_status=Yes
+employment_status=currently working
+Action=considered disabled",MISMATCH,Field 'currently working' mismatch: expected 'true'
