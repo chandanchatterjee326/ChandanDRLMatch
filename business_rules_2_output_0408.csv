@@ -1,0 +1,47 @@
+﻿,Row ID,Business Content 1,Rule 1,Business Content 2,Rule 2,Flag,Match Score %,Reason,Details
+0,0,"For Case 1, an individual is eligible for coverage if they are classified as an Employee and work 30 or more hours per week.","Employment Type=Employee
+Working Hours>=30
+None=None
+Action=Eligible for Coverage",Eligibility criteria for coverage under the Group Insurance Certificate.,"Classification=Employee
+Hours Worked Per Week=30
+Action=Eligible for coverage",MISMATCH,50,"Rule 1 requires 'working hours' to be greater than or equal to 30, while Rule 2 requires 'hours worked per week' to be exactly 30. This difference in the operator (>= vs =) leads to different eligibility criteria.","[object Object],[object Object]"
+1,1,"For Case 2, the individual is considered disabled if they are unable to perform their duties at work, are under doctor care, and are currently not working.","Work Ability=Unable to perform duties
+Doctor Care=Yes
+Currently Working=No
+Action=Considered Disabled",Validation of disability status for Case 2 based on specific criteria.,"ability_to_perform_duties=unable
+doctor_care=under regular care
+employment_status=not working
+Action=considered disabled",MATCH,100,3/3 conditions matched,"[object Object],[object Object],[object Object]"
+2,2,"For Case 3, if the elimination period has been completed (indicated by a 'Yes'), then the benefit payment should be started.","Elimination Period Completed=Yes
+None=None
+None=None
+Action=Start Benefit Payment",Validation rule for disability benefit payments based on the completion of the elimination period.,"Elimination Period Completed=Yes
+Action=Start benefit payment",MATCH,100,1/1 conditions matched,[object Object]
+3,3,"For Case 4, an individual is eligible for coverage if they are classified as an Employee and work fewer than 30 hours per week.","Employment Type=Employee
+Working Hours<30
+None=None
+Action=Eligible for Coverage",Eligibility for coverage based on employment status and hours worked.,"Employment Status=Employee
+Hours Worked Per Week<30
+Action=Eligible for coverage",MATCH,50,"Both rules evaluate the same conditions regarding employment type/status and working hours/hours worked per week, leading to the same action of being eligible for coverage. The differences in naming do not affect the underlying logic.","[object Object],[object Object]"
+4,4,"For Case 5, if a person is unable to perform their duties and is not currently working, then they should be considered disabled.","Work Ability=Unable to perform duties
+Currently Working=No
+None=None
+Action=Considered Disabled",Validation rule for determining disability status based on the ability to perform duties and current employment status.,"ability_to_perform_duties=unable
+current_employment_status=not working
+Action=considered disabled",MATCH,50,"Both rules evaluate the same conditions regarding an individual's ability to perform duties and their current employment status, leading to the same action of being 'considered disabled'. The differences in naming do not affect the underlying logic.","[object Object],[object Object]"
+5,5,"For Case 6, if the elimination period has not been completed, then the benefit payment should be started.","Elimination Period Completed=No
+None=None
+None=None
+Action=Start Benefit Payment",Validation rule for benefit payment based on elimination period completion.,"elimination_period_completed=false
+Action=start_benefit_payment",MATCH,100,1/1 conditions matched,[object Object]
+6,6,"For Case 7, if the individual's age is greater than 100 years, then the coverage will continue.","Age>100
+Condition 2 Fieldcondition 2 operatorCondition 2 Value
+Condition 3 Fieldcondition 3 operatorCondition 3 Value
+Action=Coverage Continues","For Case 7, if the individual's age is greater than 100 years, then the coverage will continue.","age>100
+Action=coverage will continue",MISMATCH,33.33,"Rule 1 includes additional conditions (condition 2 and condition 3) that must be satisfied for the action to occur, while Rule 2 only considers the age condition. Therefore, the business logic represented by the two rules is not the same.","[object Object],[object Object],[object Object]"
+7,7,"For Case 8, if the individual is currently working and has confirmed their employment status as 'Yes', then they should be considered disabled.","Currently Working=Yes
+None=None
+None=None
+Action=Considered Disabled","For Case 8, if the individual is currently working and has confirmed their employment status as 'Yes', then they should be considered disabled.","employment_status=Yes
+currently_working=true
+Action=considered disabled",MATCH,100,1/1 conditions matched,[object Object]
