@@ -1,0 +1,58 @@
+﻿,Row ID,Business Content 1,Rule 1,Business Content 2,Rule 2,Flag,Match Score %,Reason,Details
+0,0,"In the state of Maryland (MD), starting from January 22, 2026, individuals must provide an initial notification regarding a notice of claim for disability, critical illness, or rider benefits. This notification must occur within a timeframe of 30 to 365 days from the start of the disability or the triggering event. If it is not possible to meet this deadline, the notification should be made as soon thereafter as is reasonably possible.","State=MD
+Effective Date>=2026-01-22
+Trigger Event=Start of Disability / Critical Illness / Rider Benefit
+Deadline / Timelinewithin30 – 365 Days
+Action=Provide initial notification regarding notice of claim","In the state of Maryland (MD), individuals must provide an initial notification regarding a notice of claim for disability, critical illness, or rider benefits.","state=Maryland (MD)
+notification_start_date=January 22, 2026
+notification_timeframebetween30 to 365 days
+eventin['disability', 'critical illness', 'rider benefits']
+notification_possible=not possible
+Action=Provide notification as soon thereafter as is reasonably possible.",MISMATCH,25,Only 1/4 conditions matched,"[object Object],[object Object],[object Object],[object Object]"
+1,1,"In the state of Maryland, starting from January 22, 2026, for claims related to Proof of Loss, an initial written proof is required. This requirement is triggered at the end of the elimination period or the start of liability. Claimants must submit this proof within 90 to 365 days. This requirement is mandatory for the validation of claims.","State=MD
+Effective Dateon or after2026-01-22
+Category=Proof of Loss
+Requirement Type=Initial Written Proof
+Trigger Event=End of Elimination Period / Start of Liability
+Deadline / Timelinebetween90 and 365 Days
+Condition / Exception=Mandatory for claim validation.
+Action=Require initial written proof of loss for claim validation.","In the state of Maryland, starting from January 22, 2026, for claims related to Proof of Loss, an initial written proof is required. This requirement is triggered at the end of the elimination period or the start of liability. Claimants must submit this proof within 90 to 365 days. This requirement is mandatory for the validation of claims.","state=Maryland
+claim_type=Proof of Loss
+date=2026-01-22
+event_triggerin['end of elimination period', 'start of liability']
+submission_timeframebetween[90, 365]
+Action=initial written proof is required for claim validation",MISMATCH,14.29,Only 1/7 conditions matched,"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+2,2,"In the state of Maryland, effective January 22, 2026, there is a requirement related to the Proof of Loss category. If a claim is submitted late, an extension for submission may be granted if the submission occurs after the 90 to 365 day deadline has expired. This extension allows for an additional period of up to one year for submission, but it is only valid if it can be demonstrated that earlier proof of loss was not possible, except in cases where there was a lack of legal capacity.","State=MD
+Effective Date=2026-01-22
+Category=Proof of Loss
+Requirement Type=Late Submission Extension
+Trigger Event=After the 90–365 day deadline expires
+Deadline / Timeline=Up to 1 Year
+Condition / Exception=Valid only if earlier proof was not possible (except for lack of legal capacity).
+Action=Grant late submission extension for proof of loss claims.","In the state of Maryland, effective January 22, 2026, there is a requirement related to the Proof of Loss category.","claim submission statusis latetrue
+submission time frameis after90 days
+submission time frame=365 days
+demonstration of earlier proof of lossis possiblefalse
+lack of legal capacityis presentfalse
+Action=grant extension for submission of proof of loss for an additional period of up to one year",MISMATCH,0,Only 0/7 conditions matched,"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+3,3,"In the state of Maryland (MD), starting from January 22, 2026, there is an ongoing requirement for proof of loss during the benefit period. This proof must be provided as requested, and it is necessary to furnish this documentation as often as Prudential reasonably requires.","State=MD
+Effective Dateon or after2026-01-22
+Category=Proof of Loss
+Requirement Type=Ongoing Proof
+Trigger Event=During the benefit period
+Deadline / Timeline=As requested
+Condition / Exception=Must be furnished as often as Prudential reasonably requires.
+Action=Provide ongoing proof of loss documentation as requested.","In the state of Maryland (MD), starting from January 22, 2026, there is an ongoing requirement for proof of loss during the benefit period. This proof must be provided as requested, and it is necessary to furnish this documentation as often as Prudential reasonably requires.","state=Maryland
+date=2026-01-22
+proof_of_lossrequiredtrue
+request_for_proofissued_byPrudential
+frequency_of_proofas_often_asPrudential reasonably requires
+Action=provide proof of loss",MISMATCH,14.29,Only 1/7 conditions matched,"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+4,4,"In the state of Maryland, effective January 22, 2026, any claim action must be submitted in a written, telephonic, or electronic format that is satisfactory to Prudential.","State=MD
+Effective Dateon or after2026-01-22
+Trigger Event=Any claim action
+Action=Submission must be in a format satisfactory to Prudential, which can be written, telephonic, or electronic.","In the state of Maryland, effective January 22, 2026, any claim action must be submitted in a written, telephonic, or electronic format that is satisfactory to Prudential.","state=Maryland
+effective_date=2026-01-22
+claim_formatin['written', 'telephonic', 'electronic']
+satisfaction=satisfactory to Prudential
+Action=submit claim action",MISMATCH,33.33,LLM parse error,"[object Object],[object Object],[object Object]"
