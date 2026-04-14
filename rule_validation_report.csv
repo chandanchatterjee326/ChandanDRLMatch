@@ -1,0 +1,89 @@
+Rule Id,rule1,rule2,flag,score
+BR1,"<b>For Case 1, an individual is eligible for coverage if they are classified as an Employee and work at least 30 hours per week.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Employment Type</th><th>Working Hours</th><th>Action</th></tr>
+<tr><td>Employee</td><td>30</td><td>Eligible for Coverage</td></tr>
+</table>
+","<b>Eligibility for coverage based on employment status and hours worked.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Employment Status</th><th>Hours Worked per Week</th><th>Action</th></tr>
+<tr><td>Employee</td><td>30</td><td>Eligible for coverage</td></tr>
+</table>
+",MISMATCH,50.0%
+BR2,"<b>For Case 2, the individual is considered disabled if they are unable to perform their duties at work, are under doctor care, and are currently not working.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Work Ability</th><th>Doctor Care</th><th>Currently Working</th><th>Action</th></tr>
+<tr><td>Unable to perform duties</td><td>Yes</td><td>No</td><td>Considered Disabled</td></tr>
+</table>
+","<b>Validation rule for determining disability status under Case 2.</b><br><br>
+<table class=""inner-table"">
+<tr><th>ability_to_perform_duties</th><th>doctor_care</th><th>employment_status</th><th>Action</th></tr>
+<tr><td>unable</td><td>under regular care</td><td>not working</td><td>considered disabled</td></tr>
+</table>
+",MATCH,100.0%
+BR3,"<b>For Case 3, if the Elimination Period has been completed (indicated by a 'Yes'), then the action to be taken is to start the benefit payment.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Elimination Period Completed</th><th>Action</th></tr>
+<tr><td>Yes</td><td>Start Benefit Payment</td></tr>
+</table>
+","<b>Validation rule for initiating benefit payments after the Elimination Period.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Elimination Period Completed</th><th>Action</th></tr>
+<tr><td>Yes</td><td>Start the benefit payment</td></tr>
+</table>
+",MATCH,100.0%
+BR4,"<b>For Case 4, an individual is eligible for coverage if they are classified as an Employee and work fewer than 30 hours per week.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Employment Type</th><th>Working Hours</th><th>Action</th></tr>
+<tr><td>Employee</td><td>30</td><td>Eligible for Coverage</td></tr>
+</table>
+","<b>Eligibility for coverage based on employee classification and hours worked.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Employee Classification</th><th>Hours Worked per Week</th><th>Action</th></tr>
+<tr><td>Employee</td><td>30</td><td>Eligible for coverage</td></tr>
+</table>
+",MISMATCH,50.0%
+BR5,"<b>For Case 5, the individual is considered disabled if they are unable to perform their duties and are not currently working.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Work Ability</th><th>Currently Working</th><th>Action</th></tr>
+<tr><td>Unable to perform duties</td><td>No</td><td>Considered Disabled</td></tr>
+</table>
+","<b>Validation of disability status for Case 5.</b><br><br>
+<table class=""inner-table"">
+<tr><th>ability_to_perform_duties</th><th>current_employment_status</th><th>under_regular_care_of_doctor</th><th>Action</th></tr>
+<tr><td>unable</td><td>not working</td><td>true</td><td>considered disabled</td></tr>
+</table>
+",MISMATCH,50.0%
+BR6,"<b>For Case 6, if the elimination period is not completed, then start the benefit payment.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Elimination Period Completed</th><th>Action</th></tr>
+<tr><td>No</td><td>Start Benefit Payment</td></tr>
+</table>
+","<b>For Case 6, if the elimination period is not completed, then start the benefit payment.</b><br><br>
+<table class=""inner-table"">
+<tr><th>elimination_period_completed</th><th>Action</th></tr>
+<tr><td>false</td><td>start_benefit_payment</td></tr>
+</table>
+",MATCH,100.0%
+BR7,"<b>For Case 7, if the individual's age is greater than 100 years, then the coverage will continue.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Age</th><th>Condition 2 Field</th><th>Condition 3 Field</th><th>Action</th></tr>
+<tr><td>100</td><td>Condition 2 Value</td><td>Condition 3 Value</td><td>Coverage Continues</td></tr>
+</table>
+","<b>For Case 7, if the individual's age is greater than 100 years, then the coverage will continue.</b><br><br>
+<table class=""inner-table"">
+<tr><th>age</th><th>Action</th></tr>
+<tr><td>100</td><td>coverage will continue</td></tr>
+</table>
+",MISMATCH,33.33%
+BR8,"<b>For Case 8, if the individual is currently working and their response is 'Yes', then they should be considered disabled.</b><br><br>
+<table class=""inner-table"">
+<tr><th>Currently Working</th><th>Action</th></tr>
+<tr><td>Yes</td><td>Considered Disabled</td></tr>
+</table>
+","<b>Validation rule for determining disability status based on employment and response.</b><br><br>
+<table class=""inner-table"">
+<tr><th>individual_currently_working</th><th>case_number</th><th>Action</th></tr>
+<tr><td>Yes</td><td>8</td><td>considered disabled</td></tr>
+</table>
+",MATCH,100.0%
